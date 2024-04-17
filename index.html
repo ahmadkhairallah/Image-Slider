@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;1000&family=Open+Sans:wght@400;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Image Slider</div>
+      <h2>Image Slider With Thumbnail</h2>
+      <ul>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="slider-contaner">
+      <button class="prev">Previous</button>
+      <div class="slider">
+        <div class="counter-id">Image 1</div>
+        <img class="active" src="images/pic10.jpg" alt="Image 1" />
+        <img src="images/pic12.jpg" alt="Image 2" />
+        <img src="images/pic4.jpg" alt="Image 3" />
+        <img src="images/pic5.jpg" alt="Image 4" />
+        <img src="images/pic9.jpg" alt="Image 5" />
+        <img src="images/pic6.jpg" alt="Image 6" />
+      </div>
+      <button class="next">Next</button>
+    </div>
+    <div class="gallery-container"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #eee;
+  font-family: "Rubik" sans-serif;
+  font-optical-sizing: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #aaa;
+  margin-left: 40px;
+}
+@media (max-width: 778px) {
+  .logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 576px) {
+    .logo {
+      display: none;
+    }
+  }
+h2 {
+  color: #aaa;
+  letter-spacing: 5px;
+}
+@media (max-width: 1200px) {
+  h2 {
+    display: none;
+  }
+}
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-right: 20px;
+}
+@media (max-width: 576px) {
+    ul {
+      margin: auto;
+    }
+  }
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media (max-width: 778px) {
+  ul li a {
+    padding: 8px 6px;
+    letter-spacing: 0;
+  }
+}
+ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.slider-contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.slider-contaner button {
+    width: 60px;
+    height: 400px;
+    background-color: #ddd;
+    border: none;
+    color: white;
+    font-size: 25px;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;  
+    cursor: pointer;  
+    border-radius: 6px;
+}
+.slider-contaner button:hover{
+    background-color: #aaa;
+}
+.slider {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+.slider .counter-id {
+    position: absolute;
+    z-index: 1;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+    
+}
+.slider .active {
+    opacity: 1;
+}
+.slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+}
+button:disabled {
+    cursor: no-drop;
+    opacity: 0.8;
+  }
+.gallery-container {
+   
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+width: 700px;
+margin: auto;
+box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+}
+.gallery-container img {
+opacity: 0.5;
+transition: 0.3s;
+max-width: 100%;
+}
+.gallery-container img:hover{
+    opacity: 1;
+}
+.gallery-container img.active {
+    opacity: 1;
+}
